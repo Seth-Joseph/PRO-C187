@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta name = 'viewport' content="with=device-width, initial-scale=1.0">
+      <title>Seth Joseph</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+      <script src="https://kit.fontawesome.com/289c06e4e2.js" crossorigin="anonymous"></script>    
+   </head>
+   </head>
+   <body>
+      <section  class="header">
+         <nav>
+            <div class="nav-links" id="navLinks">
+            <ul>
+               <div class="container">
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#projects">Projects</a></li>
+                  <div class="theme-switch">
+                     <div class="switch"></div>
+                     <i class="fas fa-moon"></i>
+                     <i class="fas fa-sun"></i>
+                  </div>
+            </ul>
+            </div>
+         </nav>
+         <div class='container2'>
+            <div>
+               <img src='../assets/frame.png' class='iconDetails' width="15%">
+            </div>
+            <div class="text-box" >
+               <p>Hello I'm</p>
+               <h1>Seth Joseph Alencherry</h1>
+               <div class="icons">
+                  <i class="fas fa-map-marker-alt">
+                     <f>Changanacherry,Kerala,India</f>
+                  </i>
+                  <br>
+                  <i  class="fa fa-phone-alt">
+                     <f>+91 9496989989</f>
+                  </i>
+                  <br>
+                  <i  class="fa fa-envelope">
+                     <f>sethalencherry@gmail.com</f>
+                  </i>
+                  <br>
+               </div>
+               <div class="sm">
+                  <a href="https://www.facebook.com/seth.alencherry" target="blank"><i  class="fa fa-facebook"></i></a>
+                  <a href="https://twitter.com/AlencherrySeth" target="blank"><i  class="fa fa-twitter"></i></a>
+                  <a href="https://www.instagram.com/sethalencherry/" target="blank"><i  class="fa fa-instagram"></i></a>
+                  <a href="https://github.com/Seth-Joseph" target="blank"><i  class="fa fa-github"></i></a>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="about">
+         <div class="img">
+            <img src="../assets/about.png">
+         </div>
+         <div class="me">
+            <p id="about"> About Me</p>
+         </div>
+         <div class="sub">
+            <p>I have rich experience in app design & building,<br> and customization. Also, I am good at :</p>
+         </div>
+         <div class="label">
+            <p>JavaScript</p>
+            <P>Html</P>
+            <p>CSS</p>
+            <p>Python</p>
+            <p>Machine Learning</p>
+            <p>Augmented Reality</p>
+            <p>Virtual Reality</p>
+         </div>
+      </section>
+      <section class="proj">
+         <div class="head">
+            <p id="projects">Projects </p>
+            <a href="../ar/marker.html" target="blank"><h4>More Info</h4></a>
+ 
+         </div>
+         <div class="row">
+            <div class="column">
+               <img src="../assets/patterns/flight/flight.png">
+               <img src="../assets/patterns/gps/gps.png">
+               <img src="../assets/patterns/restaurant/restaurnat.png">
+               <img src="../assets/patterns/shooting/shooting.png">
+               <img src="../assets/patterns/tour/tour.png">
+            </div>
+         </div>
+      </section>
+     
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script>
+         $(".theme-switch").on("click", () => {
+           $("body").toggleClass("light-theme");
+         });
+      </script>
+   </body>
+</html>

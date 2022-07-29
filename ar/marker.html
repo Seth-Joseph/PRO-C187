@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+  <title>Scanner</title>
+
+  <!-- Import A-Frame and then AR.js -->
+
+  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+
+  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+
+<body style="margin : 0px; overflow: hidden;">
+
+  <!-- A-frame scene -->
+  <a-scene vr-mode-ui="enabled: false;" embedded arjs="sourceType: webcam; 
+  sourceWidth:1280; sourceHeight:960; 
+  displayWidth: 1280; displayHeight: 960; 
+  debugUIEnabled: false;" >
+
+    <a-assets>
+
+      <img id="card2" src="../assets/cards/2.png">
+      <img id="card3" src="../assets/cards/3.png">
+      <img id="card4" src="../assets/cards/4.png">
+      <img id="card5" src="../assets/cards/5.png">
+      <img id="card6" src="../assets/cards/6.png">
+    </a-assets>
+
+
+    <!-- Project Virtual Flight -->
+    <a-marker type="pattern" url="../assets/patterns/flight/flight.patt">     
+      <a-plane src="#card2" position="0 0 -1" width="2" height="1.5" rotation="-90 0 0"></a-plane>
+    </a-marker>
+
+    <!-- Project Virtual Tour -->
+    <a-marker type="pattern" url="../assets/patterns/tour/tour.patt">     
+      <a-plane src="#card3" position="0 0 -1" width="2" height="1.5" rotation="-90 0 0"></a-plane>
+    </a-marker>
+
+    <!-- Project Virtual Shooting Game -->
+    <a-marker type="pattern" url="../assets/patterns/shooting/shooting.patt">     
+      <a-plane src="#card4" position="0 0 -1" width="2" height="1.5" rotation="-90 0 0"></a-plane>
+    </a-marker>
+
+    <!-- Project AR Navigation-->
+    <a-marker type="pattern" url="../assets/patterns/gps/gps.patt">     
+      <a-plane src="#card5" position="0 0 -1" width="2" height="1.5" rotation="-90 0 0"></a-plane>
+    </a-marker>
+
+    <!-- Project AR Menu Card -->
+    <a-marker type="pattern" url="../assets/patterns/restaurant/restaurant.patt">
+      <a-plane src="#card6" position="0 0 0" width="2" height="1.5" rotation="-90 0 0"></a-plane>
+    </a-marker>
+
+    <script>
+      Swal.fire({
+            icon: 'info',
+            title: 'How to Scan',
+            text: 'Scan the markers given in Home page by bringing the camera towards the marker.',
+          })
+    </script>
+
+  </a-scene>
+</body>
+
+</html>
